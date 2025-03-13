@@ -1,0 +1,215 @@
+{
+    "subtypes": {
+      "LUAD EGFR-mutated": {
+        "description": "Lung adenocarcinoma with EGFR driver mutations",
+        "therapy_levels": {
+          "1": {
+            "name": "Low Intensity Therapy",
+            "description": "Conservative approach for low-risk disease",
+            "recommendations": [
+              {
+                "therapy": "EGFR TKI monotherapy",
+                "details": "Osimertinib, Gefitinib, or Erlotinib",
+                "duration": "Until progression"
+              },
+              {
+                "therapy": "Active surveillance",
+                "details": "For asymptomatic, small nodules or ground glass opacities",
+                "indication": "Elderly or frail patients"
+              }
+            ],
+            "follow_up": "Every 3 months with imaging",
+            "indications": [
+              "Early-stage disease (I-II)",
+              "Elderly or frail patients",
+              "Significant comorbidities"
+            ]
+          },
+          "2": {
+            "name": "Standard Therapy",
+            "description": "Balanced approach for intermediate-risk disease",
+            "recommendations": [
+              {
+                "therapy": "EGFR TKI therapy",
+                "details": "Osimertinib preferred for first-line",
+                "duration": "Until progression"
+              },
+              {
+                "therapy": "Consider adjuvant EGFR TKI",
+                "details": "After surgical resection for early stage",
+                "duration": "3 years"
+              }
+            ],
+            "follow_up": "Every 2-3 months with imaging",
+            "indications": [
+              "Stage III-IV disease",
+              "Good performance status",
+              "Common EGFR mutations (exon 19 deletion, L858R)"
+            ]
+          },
+          "3": {
+            "name": "Intensified Therapy",
+            "description": "More aggressive approach for high-risk disease",
+            "recommendations": [
+              {
+                "therapy": "EGFR TKI + Anti-angiogenic",
+                "details": "Osimertinib + Bevacizumab or Ramucirumab",
+                "duration": "Until progression"
+              },
+              {
+                "therapy": "Consider local therapy for oligoprogression",
+                "details": "SBRT or surgical resection",
+                "indication": "Limited sites of progression"
+              }
+            ],
+            "follow_up": "Every 6-8 weeks with imaging",
+            "indications": [
+              "Brain metastases",
+              "Uncommon EGFR mutations",
+              "Bulky disease"
+            ]
+          },
+          "4": {
+            "name": "Maximum Intensity Therapy",
+            "description": "Most aggressive approach for very high-risk disease",
+            "recommendations": [
+              {
+                "therapy": "Combination therapy",
+                "details": "EGFR TKI + chemotherapy",
+                "regimen": "Osimertinib + platinum-pemetrexed"
+              },
+              {
+                "therapy": "Clinical trial",
+                "details": "Novel approaches for EGFR resistance",
+                "examples": "EGFR/MET bispecific antibodies, 4th generation TKIs"
+              }
+            ],
+            "follow_up": "Every 6 weeks with imaging",
+            "indications": [
+              "Resistance to earlier-line TKIs",
+              "T790M or C797S mutations",
+              "Rapid progression",
+              "Multiple organ involvement"
+            ]
+          }
+        }
+      },
+      "LUAD ALK-rearranged": {
+        "description": "Lung adenocarcinoma with ALK gene rearrangements",
+        "therapy_levels": {
+          
+        }
+      },
+      "LUAD KRAS-mutated": {
+        "description": "Lung adenocarcinoma with KRAS mutations",
+        "therapy_levels": {
+          
+        }
+      },
+      "LUSC": {
+        "description": "Lung squamous cell carcinoma",
+        "therapy_levels": {
+          
+        }
+      }
+    },
+    "special_biomarkers": {
+      "EGFR_mutation": {
+        "clinical_significance": "Driver mutation and therapeutic target in NSCLC",
+        "therapy_options": [
+          {
+            "name": "Osimertinib",
+            "indication": "First-line for EGFR mut+ NSCLC, better for brain mets",
+            "evidence_level": "Level 1A"
+          },
+          {
+            "name": "Gefitinib/Erlotinib",
+            "indication": "First-generation TKIs for EGFR mut+ NSCLC",
+            "evidence_level": "Level 1A"
+          }
+        ]
+      },
+      "ALK_rearrangement": {
+        "clinical_significance": "Driver alteration and therapeutic target in NSCLC",
+        "therapy_options": [
+          {
+            "name": "Alectinib",
+            "indication": "First-line for ALK+ NSCLC",
+            "evidence_level": "Level 1A"
+          },
+          {
+            "name": "Lorlatinib",
+            "indication": "Later-line for ALK+ NSCLC with resistance",
+            "evidence_level": "Level 1A"
+          }
+        ]
+      },
+      "KRAS_G12C_mutation": {
+        "clinical_significance": "Targetable KRAS mutation subtype",
+        "therapy_options": [
+          {
+            "name": "Sotorasib",
+            "indication": "Approved for KRAS G12C+ NSCLC after prior therapy",
+            "evidence_level": "Level 1A"
+          }
+        ]
+      },
+      "PD-L1_high": {
+        "clinical_significance": "Predictive biomarker for immunotherapy response",
+        "therapy_options": [
+          {
+            "name": "Pembrolizumab monotherapy",
+            "indication": "First-line for NSCLC with PD-L1 ≥50%",
+            "evidence_level": "Level 1A"
+          }
+        ]
+      }
+    },
+    "therapy_levels": {
+      "1": {
+        "name": "Low Intensity Therapy",
+        "description": "Conservative approach for low-risk disease or patients with comorbidities",
+        "general_indications": [
+          "Early-stage disease",
+          "Elderly or frail patients", 
+          "Significant comorbidities"
+        ],
+        "follow_up": "Every 3-4 months with imaging",
+        "monitoring": "Low-dose CT scans, symptom monitoring"
+      },
+      "2": {
+        "name": "Standard Therapy",
+        "description": "Balanced approach for most patients with average risk disease",
+        "general_indications": [
+          "Locally advanced or metastatic disease",
+          "Good performance status (ECOG 0-1)",
+          "Standard molecular profile"
+        ],
+        "follow_up": "Every 2-3 months with imaging",
+        "monitoring": "Regular CT scans, possible molecular testing for resistance"
+      },
+      "3": {
+        "name": "Intensified Therapy",
+        "description": "More aggressive approach for high-risk disease",
+        "general_indications": [
+          "Presence of brain metastases",
+          "Uncommon or complex molecular alterations",
+          "Limited progression on initial therapy"
+        ],
+        "follow_up": "Every 6-8 weeks with imaging",
+        "monitoring": "Regular CT/MRI, molecular testing for resistance mechanisms"
+      },
+      "4": {
+        "name": "Maximum Intensity Therapy",
+        "description": "Most aggressive approach for very high-risk disease",
+        "general_indications": [
+          "Treatment resistance", 
+          "Rapid progression",
+          "Multiple lines of prior therapy",
+          "Clinically aggressive disease"
+        ],
+        "follow_up": "Every 6 weeks with imaging",
+        "monitoring": "Frequent CT/MRI, molecular testing, close symptom monitoring"
+      }
+    }
+  }

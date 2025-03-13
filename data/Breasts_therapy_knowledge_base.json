@@ -1,0 +1,666 @@
+{
+  "subtypes": {
+    "Luminal A/B": {
+      "description": "Hormone receptor positive (ER+/PR+), HER2 negative breast cancer",
+      "therapy_levels": {
+        "1": {
+          "name": "Low Intensity Therapy",
+          "description": "Conservative approach for low-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Endocrine therapy alone",
+              "details": "Tamoxifen (premenopausal) or Aromatase Inhibitor (postmenopausal)",
+              "duration": "5-10 years"
+            },
+            {
+              "therapy": "Consider genomic testing",
+              "details": "Oncotype DX or MammaPrint to assess recurrence risk",
+              "indication": "For determining chemotherapy benefit"
+            },
+            {
+              "therapy": "Omit chemotherapy",
+              "details": "Low risk of recurrence based on clinical and genomic features",
+              "evidence_level": "Level 1A"
+            }
+          ],
+          "follow_up": "Every 6 months for 5 years",
+          "indications": [
+            "Small tumor size (≤2 cm)",
+            "Low grade (Grade 1)",
+            "Low Ki-67 (<10%)",
+            "Low genomic risk score",
+            "Older age (>70 years)"
+          ]
+        },
+        "2": {
+          "name": "Standard Therapy",
+          "description": "Balanced approach for intermediate-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Endocrine therapy",
+              "details": "Tamoxifen or Aromatase Inhibitor",
+              "duration": "5-10 years"
+            },
+            {
+              "therapy": "Consider chemotherapy",
+              "details": "Based on higher recurrence risk",
+              "regimen": "TC (Docetaxel/Cyclophosphamide) or AC-T (Anthracycline/Cyclophosphamide followed by Taxane)"
+            },
+            {
+              "therapy": "Consider CDK4/6 inhibitor",
+              "details": "Palbociclib, Ribociclib, or Abemaciclib",
+              "indication": "For metastatic or high-risk early-stage disease"
+            }
+          ],
+          "follow_up": "Every 4-6 months for 5 years",
+          "indications": [
+            "Intermediate tumor size (2-5 cm)",
+            "Intermediate grade (Grade 2)",
+            "Intermediate Ki-67 (10-20%)",
+            "Intermediate genomic risk score",
+            "1-3 positive lymph nodes"
+          ]
+        },
+        "3": {
+          "name": "Intensified Therapy",
+          "description": "More aggressive approach for high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Chemotherapy followed by endocrine therapy",
+              "details": "Anthracycline/taxane-based regimen",
+              "duration": "Chemotherapy: 4-6 months, Endocrine therapy: 5-10 years"
+            },
+            {
+              "therapy": "CDK4/6 inhibitor + endocrine therapy",
+              "details": "For metastatic disease or high-risk early-stage disease",
+              "evidence_level": "Level 1A for metastatic, Level 2A for early-stage"
+            },
+            {
+              "therapy": "Consider clinical trial",
+              "details": "For novel therapies",
+              "indication": "High-risk disease features"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 6 months for 3 years",
+          "indications": [
+            "Large tumor size (>5 cm)",
+            "High grade (Grade 3)",
+            "High Ki-67 (>20%)",
+            "High genomic risk score",
+            "≥4 positive lymph nodes"
+          ]
+        },
+        "4": {
+          "name": "Maximum Intensity Therapy",
+          "description": "Most aggressive approach for very high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Dose-dense chemotherapy",
+              "details": "Followed by extended adjuvant endocrine therapy",
+              "regimen": "Dose-dense AC-T with growth factor support"
+            },
+            {
+              "therapy": "Consider additional targeted therapy",
+              "details": "Based on specific genomic alterations",
+              "examples": "PI3K inhibitors for PIK3CA mutations, mTOR inhibitors"
+            },
+            {
+              "therapy": "Clinical trial enrollment",
+              "details": "For high-risk disease",
+              "indication": "Very high-risk features or multiple recurrences"
+            }
+          ],
+          "follow_up": "Every 2-3 months for 2 years, then every 3-4 months for 3 years",
+          "indications": [
+            "Inflammatory breast cancer",
+            "Extensive lymph node involvement",
+            "Young age with high-risk features",
+            "High genomic risk score with multiple high-risk genomic alterations",
+            "Rapid progression or recurrence after standard therapy"
+          ]
+        }
+      },
+      "biomarker_therapies": [
+        {
+          "biomarker": "PIK3CA_mutation",
+          "therapy": "PI3K inhibitor (Alpelisib)",
+          "indication": "Metastatic HR+/HER2- breast cancer with PIK3CA mutation",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "biomarker": "ESR1_mutation",
+          "therapy": "Fulvestrant",
+          "indication": "Metastatic disease with ESR1 mutation after AI failure",
+          "evidence_level": "Level 2A"
+        }
+      ]
+    },
+    "Luminal HER2+": {
+      "description": "Hormone receptor positive (ER+/PR+), HER2 positive breast cancer",
+      "therapy_levels": {
+        "1": {
+          "name": "Low Intensity Therapy",
+          "description": "Conservative approach for low-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Endocrine therapy",
+              "details": "Tamoxifen or Aromatase Inhibitor",
+              "duration": "5-10 years"
+            },
+            {
+              "therapy": "HER2-targeted therapy",
+              "details": "Single-agent trastuzumab",
+              "duration": "1 year"
+            }
+          ],
+          "follow_up": "Every 3-4 months for 2 years, then every 6 months for 3 years",
+          "indications": [
+            "Very small tumor size (≤1 cm)",
+            "Node-negative",
+            "Low grade",
+            "Elderly or frail patients"
+          ]
+        },
+        "2": {
+          "name": "Standard Therapy",
+          "description": "Balanced approach for intermediate-risk disease",
+          "recommendations": [
+            {
+              "therapy": "HER2-targeted therapy",
+              "details": "Trastuzumab",
+              "duration": "1 year"
+            },
+            {
+              "therapy": "Endocrine therapy",
+              "details": "Tamoxifen or Aromatase Inhibitor",
+              "duration": "5-10 years"
+            },
+            {
+              "therapy": "Consider low-intensity chemotherapy",
+              "details": "Taxane-based",
+              "regimen": "Weekly paclitaxel + trastuzumab"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4-6 months for 3 years",
+          "indications": [
+            "Tumor size 1-2 cm",
+            "0-1 positive lymph nodes",
+            "Intermediate grade"
+          ]
+        },
+        "3": {
+          "name": "Intensified Therapy",
+          "description": "More aggressive approach for high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Chemotherapy + dual HER2 blockade",
+              "details": "Taxane + Trastuzumab + Pertuzumab",
+              "duration": "Chemotherapy: 4-6 months, HER2 therapy: 1 year"
+            },
+            {
+              "therapy": "Followed by endocrine therapy",
+              "details": "Tamoxifen or Aromatase Inhibitor",
+              "duration": "5-10 years"
+            },
+            {
+              "therapy": "Extended HER2-targeted therapy",
+              "details": "Complete one year of trastuzumab",
+              "evidence_level": "Level 1A"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+          "indications": [
+            "Tumor size 2-5 cm",
+            "2-3 positive lymph nodes",
+            "High grade"
+          ]
+        },
+        "4": {
+          "name": "Maximum Intensity Therapy",
+          "description": "Most aggressive approach for very high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Neoadjuvant dual HER2 blockade + chemotherapy",
+              "details": "Trastuzumab + Pertuzumab + Anthracycline/Taxane",
+              "duration": "4-6 months neoadjuvant, complete 1 year HER2 therapy"
+            },
+            {
+              "therapy": "Adjuvant T-DM1",
+              "details": "For residual disease after neoadjuvant therapy",
+              "duration": "14 cycles"
+            },
+            {
+              "therapy": "Extended adjuvant therapy",
+              "details": "Neratinib after trastuzumab + endocrine therapy",
+              "duration": "1 year of neratinib"
+            }
+          ],
+          "follow_up": "Every 2 months for 2 years, then every 3 months for 3 years",
+          "indications": [
+            "Tumor size >5 cm",
+            "≥4 positive lymph nodes",
+            "Inflammatory breast cancer",
+            "Young age with high-risk features"
+          ]
+        }
+      },
+      "biomarker_therapies": [
+        {
+          "biomarker": "ERBB2_amplification",
+          "therapy": "HER2-targeted therapy (Trastuzumab + Pertuzumab)",
+          "indication": "Standard for all HER2+ breast cancers",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    },
+    "HER2 Enriched": {
+      "description": "Hormone receptor negative (ER-/PR-), HER2 positive breast cancer",
+      "therapy_levels": {
+        "1": {
+          "name": "Low Intensity Therapy",
+          "description": "Conservative approach for low-risk disease",
+          "recommendations": [
+            {
+              "therapy": "HER2-targeted therapy",
+              "details": "Single-agent trastuzumab",
+              "duration": "1 year"
+            },
+            {
+              "therapy": "Low-intensity chemotherapy",
+              "details": "Weekly paclitaxel",
+              "duration": "12 weeks"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+          "indications": [
+            "Very small tumor size (≤1 cm)",
+            "Node-negative",
+            "Elderly or frail patients"
+          ]
+        },
+        "2": {
+          "name": "Standard Therapy",
+          "description": "Balanced approach for intermediate-risk disease",
+          "recommendations": [
+            {
+              "therapy": "HER2-targeted therapy",
+              "details": "Trastuzumab",
+              "duration": "1 year"
+            },
+            {
+              "therapy": "Chemotherapy",
+              "details": "Taxane-based",
+              "regimen": "Weekly paclitaxel + trastuzumab or TCHP (Taxotere, Carboplatin, Herceptin, Perjeta)"
+            },
+            {
+              "therapy": "Consider dual HER2 blockade",
+              "details": "Add pertuzumab for higher risk",
+              "evidence_level": "Level 1A"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+          "indications": [
+            "Tumor size 1-2 cm",
+            "0-1 positive lymph nodes",
+            "Intermediate grade"
+          ]
+        },
+        "3": {
+          "name": "Intensified Therapy",
+          "description": "More aggressive approach for high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Dual HER2 blockade",
+              "details": "Trastuzumab + Pertuzumab",
+              "duration": "1 year"
+            },
+            {
+              "therapy": "Chemotherapy",
+              "details": "Anthracycline/taxane-based regimen",
+              "regimen": "AC-THP (Doxorubicin, Cyclophosphamide, followed by Taxol, Herceptin, Perjeta)"
+            },
+            {
+              "therapy": "Consider neratinib",
+              "details": "Extended adjuvant therapy after trastuzumab",
+              "duration": "1 year"
+            }
+          ],
+          "follow_up": "Every 2 months for 2 years, then every 3 months for 3 years",
+          "indications": [
+            "Tumor size 2-5 cm",
+            "2-3 positive lymph nodes",
+            "High grade"
+          ]
+        },
+        "4": {
+          "name": "Maximum Intensity Therapy",
+          "description": "Most aggressive approach for very high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Neoadjuvant dual HER2 blockade + chemotherapy",
+              "details": "Trastuzumab + Pertuzumab + Anthracycline/Taxane",
+              "duration": "4-6 months neoadjuvant, complete 1 year HER2 therapy"
+            },
+            {
+              "therapy": "Adjuvant T-DM1",
+              "details": "For residual disease after neoadjuvant therapy",
+              "duration": "14 cycles"
+            },
+            {
+              "therapy": "Clinical trial",
+              "details": "Novel HER2-targeted approaches",
+              "examples": "HER2-targeted ADCs, novel TKIs, immunotherapy combinations"
+            }
+          ],
+          "follow_up": "Every 2 months for 2 years, then every 3 months for 3 years",
+          "indications": [
+            "Tumor size >5 cm",
+            "≥4 positive lymph nodes",
+            "Inflammatory breast cancer",
+            "Young age with high-risk features"
+          ]
+        }
+      },
+      "biomarker_therapies": [
+        {
+          "biomarker": "ERBB2_amplification",
+          "therapy": "HER2-targeted therapy (Trastuzumab + Pertuzumab)",
+          "indication": "Standard for all HER2+ breast cancers",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    },
+    "Triple Negative": {
+      "description": "Hormone receptor negative (ER-/PR-), HER2 negative breast cancer",
+      "therapy_levels": {
+        "1": {
+          "name": "Low Intensity Therapy",
+          "description": "Conservative approach for low-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Consider chemotherapy",
+              "details": "TC regimen (docetaxel/cyclophosphamide)",
+              "duration": "4 cycles"
+            },
+            {
+              "therapy": "Observation",
+              "details": "For very small, node-negative tumors",
+              "indication": "Tumor size ≤0.5 cm, node-negative"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+          "indications": [
+            "Very small tumor size (≤0.5 cm)",
+            "Node-negative",
+            "Elderly or frail patients"
+          ]
+        },
+        "2": {
+          "name": "Standard Therapy",
+          "description": "Balanced approach for intermediate-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Adjuvant chemotherapy",
+              "details": "TC or AC-T regimen",
+              "duration": "4-8 cycles depending on regimen"
+            },
+            {
+              "therapy": "Consider platinum agent",
+              "details": "Especially for BRCA-mutated tumors",
+              "regimen": "Add carboplatin to standard regimen"
+            },
+            {
+              "therapy": "Follow-up every 3-4 months",
+              "details": "For early detection of recurrence",
+              "duration": "At least 5 years"
+            }
+          ],
+          "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+          "indications": [
+            "Tumor size 0.5-2 cm",
+            "0-1 positive lymph nodes",
+            "Intermediate grade"
+          ]
+        },
+        "3": {
+          "name": "Intensified Therapy",
+          "description": "More aggressive approach for high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Dose-dense chemotherapy",
+              "details": "AC-T with growth factor support",
+              "duration": "8 cycles total"
+            },
+            {
+              "therapy": "Consider platinum agent",
+              "details": "Carboplatin",
+              "evidence_level": "Level 1B"
+            },
+            {
+              "therapy": "Consider neoadjuvant approach",
+              "details": "To assess treatment response",
+              "indication": "Tumors >2cm or node-positive"
+            },
+            {
+              "therapy": "Consider immunotherapy",
+              "details": "For PD-L1 positive disease",
+              "agent": "Pembrolizumab"
+            }
+          ],
+          "follow_up": "Every 2 months for 2 years, then every 3 months for 3 years",
+          "indications": [
+            "Tumor size 2-5 cm",
+            "2-3 positive lymph nodes",
+            "High grade"
+          ]
+        },
+        "4": {
+          "name": "Maximum Intensity Therapy",
+          "description": "Most aggressive approach for very high-risk disease",
+          "recommendations": [
+            {
+              "therapy": "Neoadjuvant chemotherapy",
+              "details": "Dose-dense AC-T + platinum",
+              "duration": "6-8 cycles"
+            },
+            {
+              "therapy": "Consider immunotherapy",
+              "details": "Pembrolizumab for high-risk TNBC",
+              "duration": "Up to 1 year"
+            },
+            {
+              "therapy": "Clinical trial",
+              "details": "Novel approaches for TNBC",
+              "examples": "ADCs, immunotherapy combinations, PARP inhibitors"
+            },
+            {
+              "therapy": "Consider PARP inhibitors",
+              "details": "For BRCA-mutated tumors",
+              "agent": "Olaparib or Talazoparib"
+            }
+          ],
+          "follow_up": "Every 2 months for 2 years, then every 3 months for 3 years",
+          "indications": [
+            "Tumor size >5 cm",
+            "≥4 positive lymph nodes",
+            "Inflammatory breast cancer",
+            "Young age with high-risk features"
+          ]
+        }
+      },
+      "biomarker_therapies": [
+        {
+          "biomarker": "BRCA1_mutation",
+          "therapy": "PARP inhibitor (Olaparib, Talazoparib)",
+          "indication": "BRCA-mutated metastatic TNBC",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "biomarker": "BRCA2_mutation",
+          "therapy": "PARP inhibitor (Olaparib, Talazoparib)",
+          "indication": "BRCA-mutated metastatic TNBC",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "biomarker": "PD-L1_positive",
+          "therapy": "Pembrolizumab + chemotherapy",
+          "indication": "PD-L1+ metastatic TNBC",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    }
+  },
+  "special_biomarkers": {
+    "TP53_mutation": {
+      "clinical_significance": "Associated with more aggressive disease and poorer prognosis",
+      "therapy_impact": "May suggest need for more intensive therapy",
+      "monitoring": "Closer follow-up recommended"
+    },
+    "PIK3CA_mutation": {
+      "clinical_significance": "Common in ER+ breast cancer, associated with resistance to endocrine therapy",
+      "therapy_options": [
+        {
+          "name": "Alpelisib + Fulvestrant",
+          "indication": "HR+/HER2- metastatic breast cancer with PIK3CA mutation",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    },
+    "BRCA1_mutation": {
+      "clinical_significance": "Hereditary cancer risk, associated with TNBC phenotype",
+      "therapy_options": [
+        {
+          "name": "PARP inhibitors",
+          "agents": ["Olaparib", "Talazoparib"],
+          "indication": "Metastatic breast cancer with germline BRCA mutations",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "name": "Platinum chemotherapy",
+          "indication": "Enhanced sensitivity in BRCA-mutated tumors",
+          "evidence_level": "Level 2A"
+        }
+      ],
+      "additional_recommendations": "Consider genetic counseling, family testing"
+    },
+    "BRCA2_mutation": {
+      "clinical_significance": "Hereditary cancer risk, associated with luminal phenotype",
+      "therapy_options": [
+        {
+          "name": "PARP inhibitors",
+          "agents": ["Olaparib", "Talazoparib"],
+          "indication": "Metastatic breast cancer with germline BRCA mutations",
+          "evidence_level": "Level 1A"
+        }
+      ],
+      "additional_recommendations": "Consider genetic counseling, family testing"
+    },
+    "ESR1_mutation": {
+      "clinical_significance": "Associated with resistance to aromatase inhibitors",
+      "therapy_options": [
+        {
+          "name": "Fulvestrant",
+          "indication": "More effective than AIs in ESR1-mutated tumors",
+          "evidence_level": "Level 2A"
+        }
+      ]
+    },
+    "ERBB2_amplification": {
+      "clinical_significance": "Defines HER2+ breast cancer subtype",
+      "therapy_options": [
+        {
+          "name": "Trastuzumab + Pertuzumab",
+          "indication": "Standard therapy for HER2+ breast cancer",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "name": "T-DM1",
+          "indication": "Second-line therapy after trastuzumab failure",
+          "evidence_level": "Level 1A"
+        },
+        {
+          "name": "Tucatinib + Trastuzumab + Capecitabine",
+          "indication": "HER2+ breast cancer with brain metastases",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    },
+    "MYC_amplification": {
+      "clinical_significance": "Associated with more aggressive disease and poorer prognosis",
+      "therapy_impact": "May suggest need for more intensive therapy"
+    },
+    "CCND1_amplification": {
+      "clinical_significance": "Common in ER+ breast cancer, may predict CDK4/6 inhibitor response",
+      "therapy_options": [
+        {
+          "name": "CDK4/6 inhibitors",
+          "agents": ["Palbociclib", "Ribociclib", "Abemaciclib"],
+          "indication": "HR+/HER2- breast cancer",
+          "evidence_level": "Level 1A"
+        }
+      ]
+    },
+    "PTEN_loss": {
+      "clinical_significance": "Associated with resistance to HER2-targeted therapy and PI3K pathway activation",
+      "therapy_impact": "May predict response to PI3K/AKT/mTOR inhibitors"
+    },
+    "RB1_loss": {
+      "clinical_significance": "May predict resistance to CDK4/6 inhibitors",
+      "therapy_impact": "Consider alternative approaches in HR+ disease"
+    }
+  },
+  "therapy_levels": {
+    "1": {
+      "name": "Low Intensity Therapy",
+      "description": "Conservative approach for low-risk disease or patients with comorbidities",
+      "general_indications": [
+        "Small tumors (≤1 cm)",
+        "Node-negative disease",
+        "Low-grade histology",
+        "Low genomic risk scores",
+        "Elderly or frail patients",
+        "Significant comorbidities"
+      ],
+      "follow_up": "Every 3-6 months for 5 years",
+      "monitoring": "Annual mammogram, consider breast MRI for high-risk patients"
+    },
+    "2": {
+      "name": "Standard Therapy",
+      "description": "Balanced approach for most patients with average risk disease",
+      "general_indications": [
+        "Intermediate tumor size (1-3 cm)",
+        "0-1 positive lymph nodes",
+        "Intermediate-grade histology",
+        "Intermediate genomic risk scores"
+      ],
+      "follow_up": "Every 3-4 months for 2 years, then every 6 months for 3 years",
+      "monitoring": "Annual mammogram, consider breast MRI for dense breasts"
+    },
+    "3": {
+      "name": "Intensified Therapy",
+      "description": "More aggressive approach for high-risk disease",
+      "general_indications": [
+        "Large tumors (3-5 cm)",
+        "2-3 positive lymph nodes",
+        "High-grade histology",
+        "High genomic risk scores",
+        "Young age (<40 years) with other risk factors"
+      ],
+      "follow_up": "Every 3 months for 2 years, then every 4 months for 3 years",
+      "monitoring": "Annual mammogram and breast MRI, consider more frequent imaging"
+    },
+    "4": {
+      "name": "Maximum Intensity Therapy",
+      "description": "Most aggressive approach for very high-risk disease",
+      "general_indications": [
+        "Very large tumors (>5 cm)",
+        "≥4 positive lymph nodes",
+        "Inflammatory breast cancer",
+        "Multiple high-risk genomic alterations",
+        "Young age with high-risk features"
+      ],
+      "follow_up": "Every 2-3 months for 2 years, then every 3-4 months for 3 years",
+      "monitoring": "Mammogram and breast MRI every 6 months, consider CT/PET scans"
+    }
+  }
+}
